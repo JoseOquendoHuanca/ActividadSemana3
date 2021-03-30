@@ -9,21 +9,21 @@
 </head>
 <body>
 
-  <div id="carouselintervalo" class="carousel slide "  data-touch="false" data-interval="false">
+  <div id="carouselintervalo" class="carousel slide "   data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselintervalo" data-slide-to="0" class="active"></li>
       <li data-target="#carouselintervalo" data-slide-to="1"></li>
       <li data-target="#carouselintervalo" data-slide-to="2"></li>
     </ol>
     <div class="carousel-inner">
-      <div class="carousel-item active" >
+      <div class="carousel-item active" data-interval="1000" >
         <img src="imagenes/d.jpg" class="d-block w-100" alt="..." width="850px" height="750px">
         <div class="carousel-caption d-none d-md-block">
           <h5>"No se trata bits, bytes y protocolos, sino de beneficios, pérdidas y márgenes"</h5>
           <p>Lou Gerstner</p>
         </div>
       </div>
-      <div class="carousel-item"  >
+      <div class="carousel-item"  data-interval="2000">
         <img src="imagenes/e.jpg" class="d-block w-100" alt="..." width="850px" height="750px">
         <div class="carousel-caption d-none d-md-block">
           <h5>  "Controlar la complejidad es la esencia de la programación" </h5>
@@ -48,7 +48,16 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
-  
+
+
+  <script>
+$('.carousel').carousel({
+  interval: 2000
+})
+
+
+
+
 
 
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
